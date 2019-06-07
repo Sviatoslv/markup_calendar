@@ -1,0 +1,74 @@
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 100px);
+  grid-template-rows: repeat(6, 100px);
+  grid-gap: 1px;
+  grid-auto-flow: row;
+
+  justify-content: center;
+  align-content: center;
+
+  margin-top: 160px;
+
+  &-mon div:first-child {
+    grid-column: 1 / 2;
+  }
+
+  &-tue div:first-child {
+    grid-column: 2 / 3;
+  }
+
+  &-wed div:first-child {
+    grid-column: 3 / 4;
+  }
+
+  &-thu div:first-child {
+    grid-column: 4 / 5;
+  }
+
+  &-fri div:first-child {
+    grid-column: 5 / 6;
+  }
+
+  &-sat div:first-child {
+    grid-column: 6 / 7;
+  }
+
+  &-sun div:first-child {
+    grid-column: 7 / 8;
+  }
+
+  div {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+
+    box-sizing: border-box;
+    border: 1px solid #000;
+    background-color: #eee;
+    cursor: pointer;
+
+    transition: background-color 0.5s, transform 0.5s, box-shadow 0.4s, border 0.2s;
+  }
+
+  div:hover {
+    background-color: #ffc0cb;
+    transform: translateY(-20px) skew(-5deg, -7deg) rotateY(30deg);
+    box-shadow: 9px 16px 26px #cecece;
+    border: none;
+  }
+
+  @for $i from 1 through 31 {
+    div:nth-of-type(#{$i})::after {
+      content: '#{$i}';
+    } 
+  }
+
+  @for $i from 28 through 31 {
+    &-#{$i} div:nth-of-type(-n + #{$i}) {
+      display: flex;
+    }
+  }
+}

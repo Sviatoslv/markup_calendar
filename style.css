@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 30px;
+  color: #000;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 100px);
+  grid-template-rows: repeat(6, 100px);
+  grid-gap: 1px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  margin-top: 160px;
+}
+.calendar-mon div:first-child {
+  grid-column: 1/2;
+}
+.calendar-tue div:first-child {
+  grid-column: 2/3;
+}
+.calendar-wed div:first-child {
+  grid-column: 3/4;
+}
+.calendar-thu div:first-child {
+  grid-column: 4/5;
+}
+.calendar-fri div:first-child {
+  grid-column: 5/6;
+}
+.calendar-sat div:first-child {
+  grid-column: 6/7;
+}
+.calendar-sun div:first-child {
+  grid-column: 7/8;
+}
+.calendar div {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  background-color: #eee;
+  cursor: pointer;
+  transition: background-color 0.5s, transform 0.5s, box-shadow 0.4s, border 0.2s;
+}
+.calendar div:hover {
+  background-color: #ffc0cb;
+  transform: translateY(-20px) skew(-5deg, -7deg) rotateY(30deg);
+  box-shadow: 9px 16px 26px #cecece;
+  border: none;
+}
+.calendar div:nth-of-type(1)::after {
+  content: "1";
+}
+.calendar div:nth-of-type(2)::after {
+  content: "2";
+}
+.calendar div:nth-of-type(3)::after {
+  content: "3";
+}
+.calendar div:nth-of-type(4)::after {
+  content: "4";
+}
+.calendar div:nth-of-type(5)::after {
+  content: "5";
+}
+.calendar div:nth-of-type(6)::after {
+  content: "6";
+}
+.calendar div:nth-of-type(7)::after {
+  content: "7";
+}
+.calendar div:nth-of-type(8)::after {
+  content: "8";
+}
+.calendar div:nth-of-type(9)::after {
+  content: "9";
+}
+.calendar div:nth-of-type(10)::after {
+  content: "10";
+}
+.calendar div:nth-of-type(11)::after {
+  content: "11";
+}
+.calendar div:nth-of-type(12)::after {
+  content: "12";
+}
+.calendar div:nth-of-type(13)::after {
+  content: "13";
+}
+.calendar div:nth-of-type(14)::after {
+  content: "14";
+}
+.calendar div:nth-of-type(15)::after {
+  content: "15";
+}
+.calendar div:nth-of-type(16)::after {
+  content: "16";
+}
+.calendar div:nth-of-type(17)::after {
+  content: "17";
+}
+.calendar div:nth-of-type(18)::after {
+  content: "18";
+}
+.calendar div:nth-of-type(19)::after {
+  content: "19";
+}
+.calendar div:nth-of-type(20)::after {
+  content: "20";
+}
+.calendar div:nth-of-type(21)::after {
+  content: "21";
+}
+.calendar div:nth-of-type(22)::after {
+  content: "22";
+}
+.calendar div:nth-of-type(23)::after {
+  content: "23";
+}
+.calendar div:nth-of-type(24)::after {
+  content: "24";
+}
+.calendar div:nth-of-type(25)::after {
+  content: "25";
+}
+.calendar div:nth-of-type(26)::after {
+  content: "26";
+}
+.calendar div:nth-of-type(27)::after {
+  content: "27";
+}
+.calendar div:nth-of-type(28)::after {
+  content: "28";
+}
+.calendar div:nth-of-type(29)::after {
+  content: "29";
+}
+.calendar div:nth-of-type(30)::after {
+  content: "30";
+}
+.calendar div:nth-of-type(31)::after {
+  content: "31";
+}
+.calendar-28 div:nth-of-type(-n + 28) {
+  display: flex;
+}
+.calendar-29 div:nth-of-type(-n + 29) {
+  display: flex;
+}
+.calendar-30 div:nth-of-type(-n + 30) {
+  display: flex;
+}
+.calendar-31 div:nth-of-type(-n + 31) {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */
