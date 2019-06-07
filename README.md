@@ -31,4 +31,4 @@ You are encouraged to use SASS (.scss) for this task. Please do not use JavaScri
 
 `SASS used` - please notice.
 
-[PREVIEW LINK](https://sviatoslv.github.io/markup_calendar/)gi
+[PREVIEW LINK](https://sviatoslv.github.io/markup_calendar/)
